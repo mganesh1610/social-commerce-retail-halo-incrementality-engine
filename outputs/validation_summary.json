@@ -1,0 +1,77 @@
+{
+  "total_verified_records": 105600,
+  "dataset_row_counts": {
+    "hillstrom_omnichannel_retail": 64000,
+    "uci_online_news_social_velocity": 39644,
+    "uci_youtube_creator_engagement": 1956
+  },
+  "sha256_hashes": {
+    "hillstrom.csv": "0e5893329d8b93cefecc571777672028290ab69865718020c78c7284f291aece",
+    "online_news.zip": "dba2ae526f62ccef6f2f8efb53b0268319f4d0d2719bb98d88958cfe31d58a22",
+    "youtube.zip": "bd6182891adb3cfc8334b82c062176dfbebc563bf0ba07e31c2645f916865a0a"
+  },
+  "markets_evaluated": 48,
+  "geo_holdout_results": {
+    "treated_users": 42694,
+    "control_users": 21306,
+    "visit_lift_relative_pct": 57.35,
+    "visit_z_stat": 20.51,
+    "conversion_lift_relative_pct": 86.53,
+    "conversion_z_stat": 6.24,
+    "spend_lift_relative_pct": 91.42
+  },
+  "matched_market_did_ate_usd": 0.5948,
+  "synthetic_control_results": {
+    "donor_markets_count": 24,
+    "simplex_weight_sum": 1.0,
+    "min_weight": 0.0,
+    "pre_intervention_rmspe": 0.0101,
+    "post_intervention_lift_pct": 218.72
+  },
+  "omnichannel_halo_results": {
+    "surface_lifts": {
+      "Brick_And_Mortar_POS": {
+        "treated_users": 18694,
+        "control_users": 9327,
+        "treated_mean_spend": 1.0408,
+        "control_mean_spend": 0.6445,
+        "incremental_lift_pct": 61.51,
+        "incremental_revenue_usd": 7409.85
+      },
+      "Amazon_Marketplace": {
+        "treated_users": 8959,
+        "control_users": 4420,
+        "treated_mean_spend": 1.3742,
+        "control_mean_spend": 0.6205,
+        "incremental_lift_pct": 121.46,
+        "incremental_revenue_usd": 6752.33
+      },
+      "Walmart_Connect_POS": {
+        "treated_users": 2579,
+        "control_users": 1290,
+        "treated_mean_spend": 1.4845,
+        "control_mean_spend": 0.5121,
+        "incremental_lift_pct": 189.87,
+        "incremental_revenue_usd": 2507.76
+      },
+      "DTC_Brand_Site": {
+        "treated_users": 12462,
+        "control_users": 6269,
+        "treated_mean_spend": 1.4245,
+        "control_mean_spend": 0.7169,
+        "incremental_lift_pct": 98.71,
+        "incremental_revenue_usd": 8818.57
+      }
+    },
+    "total_incremental_revenue_usd": 25488.51,
+    "omnichannel_halo_multiplier": 2.89,
+    "ridge_mmm_holdout_mape_pct": 9.35
+  },
+  "data_quality_reconciliation": {
+    "total_canonical_gmv_usd": 67258.13,
+    "raw_native_vs_3p_discrepancy_pct": 6.84,
+    "post_reconciliation_variance_usd": 0.0,
+    "governed_house_metrics_count": 12,
+    "audit_gates_passed": "14/14 (100.0%)"
+  }
+}

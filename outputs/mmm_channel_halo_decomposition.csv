@@ -1,0 +1,5 @@
+retail_surface,treated_users,control_users,treated_mean_spend,control_mean_spend,incremental_lift_pct,incremental_revenue_usd
+Brick_And_Mortar_POS,18694,9327,1.0408,0.6445,61.51,7409.85
+Amazon_Marketplace,8959,4420,1.3742,0.6205,121.46,6752.33
+Walmart_Connect_POS,2579,1290,1.4845,0.5121,189.87,2507.76
+DTC_Brand_Site,12462,6269,1.4245,0.7169,98.71,8818.57

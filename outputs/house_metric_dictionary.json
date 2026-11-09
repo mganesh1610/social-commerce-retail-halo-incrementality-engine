@@ -1,0 +1,66 @@
+{
+  "house_metric_version": "2.0.0",
+  "governed_metrics_count": 12,
+  "metrics": [
+    {
+      "metric_id": "M01",
+      "name": "Canonical Settled GMV",
+      "formula": "Gross_Order_Value - Cancelled_Orders - Settled_Returns"
+    },
+    {
+      "metric_id": "M02",
+      "name": "Affiliate Sample Funnel Conversion Rate",
+      "formula": "Creators_Posting_Video / Samples_Delivered"
+    },
+    {
+      "metric_id": "M03",
+      "name": "Content Velocity Index",
+      "formula": "Active_Creator_Videos_Posted_7D / Category_Baseline_Videos_7D"
+    },
+    {
+      "metric_id": "M04",
+      "name": "Live Shopping GMV Per Hour",
+      "formula": "Settled_Live_Session_GMV / Stream_Duration_Hours"
+    },
+    {
+      "metric_id": "M05",
+      "name": "GMV Max Incremental ROAS (iROAS)",
+      "formula": "Geo_Holdout_Incremental_GMV / GMV_Max_Paid_Ad_Spend"
+    },
+    {
+      "metric_id": "M06",
+      "name": "Omnichannel Retail Halo Multiplier",
+      "formula": "(Delta_Retail_POS + Delta_Amazon + Delta_Walmart + Delta_DTC) / Delta_DTC"
+    },
+    {
+      "metric_id": "M07",
+      "name": "Matched-Market Pre/Post DiD Lift",
+      "formula": "(Y_T_post - Y_T_pre) - (Y_C_post - Y_C_pre)"
+    },
+    {
+      "metric_id": "M08",
+      "name": "Synthetic Control Counterfactual Lift",
+      "formula": "Y_1_post - sum_j(w_j * Y_0j_post) where w_j >= 0, sum(w_j) = 1"
+    },
+    {
+      "metric_id": "M09",
+      "name": "Native-vs-3P Discrepancy Rate",
+      "formula": "|Native_Reported_GMV - ThirdParty_Reported_GMV| / Canonical_Settled_GMV"
+    },
+    {
+      "metric_id": "M10",
+      "name": "Retail POS Velocity Lift (Syndicated)",
+      "formula": "(Treated_Store_Sales_Per_TDP - Control_Store_Sales_Per_TDP) / Control_Store_Sales_Per_TDP"
+    },
+    {
+      "metric_id": "M11",
+      "name": "Adstock Social Carryover Decay",
+      "formula": "A_t = X_t + lambda * A_{t-1}"
+    },
+    {
+      "metric_id": "M12",
+      "name": "Hill Marginal Saturation Response",
+      "formula": "R(S) = alpha * S^gamma / (kappa^gamma + S^gamma)"
+    }
+  ]
+}
